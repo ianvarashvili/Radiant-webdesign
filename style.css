@@ -1,69 +1,19 @@
-.wrapper {
-  display: flex;
-  gap: 30px;
-  margin-top: 36px;
-  margin-bottom: 36px;
+@import "tailwindcss";
+
+@theme {
+  --font-switzer: "Switzer", sans-serif;
+  --color-peach: #fff1be;
+  --color-pink: #d77cde;
+  --color-text: #030712;
+  --color-grey: #555;
 }
 
-.card {
-  padding: 29px;
-  border: 1px solid #555;
-  border-radius: 10px;
-  width: 671px;
-  height: 511px;
-  overflow: hidden;
-
-  position: relative;
-}
-.card-img {
-  object-fit: cover;
-  scale: 1.7;
-  position: absolute;
-  transform: translate(5%, 0%);
-  position: relative;
+@font-face {
+  font-family: "Switzer";
+  src: url("fonts/Switzer-Medium.otf");
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background-image: linear-gradient(to top, white, transparent);
-  z-index: 1;
-}
-
-.img-2 {
-  scale: 1.7;
-  position: absolute;
-  transform: translate(15%, 10%);
-}
-.content{
-    position: absolute;
-    position: relative;
-z-index: 2;
-bottom: 0;
-display: flex;
-flex-direction: column;
-gap: 16px;
-margin-bottom: 25px;
-
-}
-
-h3{
-    font-weight: bold;
-    font-size: 26px;
-}
-
-p{
-    color: #444;
-}
-
-.type{
-    font-weight: bold;
-    font-size: 14px;
-    position: absolute;
-    top: 0;
-    transform: translate(0,-100%);
+body {
+  font-family: "Switzer", sans-serif;
+  color: var(--color-text);
 }
